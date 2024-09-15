@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Judul Dokumen</title>
+  <style>
+    * {
+      color: green;
+    }
+
+    *#content {
+      border: 1px solid blue;
+      padding: 20px;
+    }
+
+    blockquote::before,
+    blockquote::after {
+      content: '"';
+      font-size: 24px;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .text {
+      color: black;
+    }
+
+    .text::first-letter {
+      font-size: 32px;
+      font-weight: bold;
+      color: saddlebrown;
+    }
+  </style>
+</head>
+
+<body>
+  <p>
+    Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka
+    teks pada paragraf ini akan berwarna hijau
+  </p>
+  <p lang="en-us">
+    This is an English paragraph contains en-us value of lang attribute, so
+    this text will be green and italic.
+  </p>
+
+  <h1>Ini merupakan sebuah header biasa</h1>
+  <h1 lang="en-us">This is an English Header</h1>
+
+  <p class="warning">
+    Perhatikan paragraf ini! Paragraf ini merupakan paragraf yang memiliki
+    kelas bernilai warning, sehingga teks dari paragraf ini akan berwarna
+    merah
+  </p>
+
+  <div id="content">
+    <p>
+      Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai
+      "content", seharusnya paragraf ini dibungkus dalam border yang memiliki
+      padding 20px
+    </p>
+  </div>
+
+  <div>
+    <h1>pseudo element seletor</h1>
+    <blockquote>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eius error
+      explicabo ipsum molestiae necessitatibus nesciunt possimus reprehenderit sed
+      voluptates. Aliquam aspernatur autem est nobis officia praesentium quas
+      recusandae rem.
+    </blockquote>
+  </div>
+
+  <div>
+    <p class="text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+      deserunt, dicta laudantium quae quam sequi soluta vitae! A, architecto
+      beatae, consequuntur et eveniet fuga laudantium molestias praesentium
+      temporibus, unde velit.
+    </p>
+  </div>
+</body>
+
+</html>

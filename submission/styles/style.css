@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  color: #00a2c6;
+}
+
+.jumbotron {
+  background-color: #00c8eb;
+  font-size: 20px;
+  padding: 60px;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background-color: #00a2c6;
+  padding: 5px;
+}
+
+main {
+  display: flex;
+  /* Menggunakan Flexbox untuk tata letak */
+  padding: 20px;
+}
+
+#content {
+  flex: 3;
+  /* Memberikan lebih banyak ruang untuk konten */
+  padding-right: 20px;
+}
+
+aside {
+  flex: 1;
+  /* Sidebar akan mendapatkan ruang lebih kecil */
+  padding-left: 20px;
+}
+
+nav ul {
+  display: flex;
+  /* Membuat menu navigasi dengan flexbox */
+  justify-content: center;
+  /* Menempatkan menu di tengah */
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profil img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    /* Pada ukuran layar kecil, susunan berubah menjadi kolom */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
